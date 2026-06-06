@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-apex-dark text-white font-apex uppercase tracking-wider;
+    cursor: url('/รูป/m.png') 16 0, auto;
+  }
+}
+
+@layer components {
+  .cursor-pointer, a, button {
+    cursor: url('/รูป/m.png') 16 0, pointer !important;
+  }
+  .apex-btn-primary {
+    @apply relative bg-apex-red text-white px-8 py-2 font-bold transition-all hover:bg-white hover:text-apex-red;
+    clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
+  }
+
+  .apex-card {
+    @apply bg-apex-gray p-6 border-l-4 border-apex-red relative;
+    clip-path: polygon(0 0, 95% 0, 100% 10%, 100% 100%, 5% 100%, 0 90%);
+  }
+
+  .apex-glitch-text {
+    @apply relative inline-block;
+    text-shadow: 2px 0 #fff, -2px 0 #ff4e1d;
+  }
+}
