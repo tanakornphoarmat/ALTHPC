@@ -7,7 +7,7 @@ const VideoHighlights = ({ t }) => {
   useEffect(() => {
     const fetchVideos = async () => {
       try {
-        const response = await fetch('http://127.0.0.1:3001/api/videos');
+        const response = await fetch('https://althpc-production.up.railway.app/api/videos');
         const data = await response.json();
         setVideos(data);
       } catch (error) {

@@ -7,7 +7,7 @@ const PartnersSection = ({ t }) => {
   useEffect(() => {
     const fetchPartners = async () => {
       try {
-        const response = await fetch('http://127.0.0.1:3001/api/partners');
+        const response = await fetch('https://althpc-production.up.railway.app/api/partners');
         const data = await response.json();
         setPartners(data);
       } catch (error) {

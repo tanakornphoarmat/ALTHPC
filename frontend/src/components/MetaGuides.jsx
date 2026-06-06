@@ -7,7 +7,7 @@ const MetaGuides = ({ t }) => {
   useEffect(() => {
     const fetchGuides = async () => {
       try {
-        const response = await fetch('http://127.0.0.1:3001/api/guides');
+        const response = await fetch('https://althpc-production.up.railway.app/api/guides');
         const data = await response.json();
         setGuides(data);
       } catch (error) {
