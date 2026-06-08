@@ -151,7 +151,7 @@ client.on(Events.InteractionCreate, async interaction => {
       await fs.writeFile(DATA_FILE, JSON.stringify(data, null, 2));
       await interaction.reply({ content: `✅ **อัปเดตสไลด์สำเร็จ!**`, flags: MessageFlags.Ephemeral });
     } else if (interaction.customId === 'partner_modal') {
-      const fbIgInput = interaction.fields.getTextInputValue('partner_name') ? "" : interaction.fields.getTextInputValue('partner_fb_ig') || "";
+      const fbIgInput = interaction.fields.getTextInputValue('partner_fb_ig') || "";
       const tiktokYtInput = interaction.fields.getTextInputValue('partner_tiktok_yt') || "";
       const dcInput = interaction.fields.getTextInputValue('partner_dc') || "";
       
