@@ -116,7 +116,7 @@ client.on(Events.MessageCreate, async message => {
         .setStyle(ButtonStyle.Link),
       new ButtonBuilder()
         .setLabel('📢 แจ้งปัญหา/ติดต่อ')
-        .setURL('https://discord.gg/apex-legends-thailand')
+        .setURL('https://discord.com/channels/543110414246871052/1388878156747767908')
         .setStyle(ButtonStyle.Link)
     );
 
