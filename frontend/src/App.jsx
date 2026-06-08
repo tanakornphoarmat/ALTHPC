@@ -109,7 +109,7 @@ function App() {
     
     const fetchNews = async () => {
       try {
-        const response = await fetch('https://althpc-production.up.railway.app/api/news');
+        const response = await fetch('https://api.alth-publiccommunity.xyz/api/news');
         if (!response.ok) throw new Error("API News Error");
         const data = await response.json();
         setNews(data);

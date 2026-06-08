@@ -10,7 +10,7 @@ const TournamentCalendar = () => {
   useEffect(() => {
     const fetchTournaments = async () => {
       try {
-        const response = await fetch('https://althpc-production.up.railway.app/api/tournaments');
+        const response = await fetch('https://api.alth-publiccommunity.xyz/api/tournaments');
         if (!response.ok) throw new Error("API Tournaments Error");
         const data = await response.json();
         setTournaments(data);

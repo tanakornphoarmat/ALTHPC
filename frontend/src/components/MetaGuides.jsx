@@ -7,7 +7,7 @@ const MetaGuides = ({ t }) => {
   useEffect(() => {
     const fetchGuides = async () => {
       try {
-        const response = await fetch('https://althpc-production.up.railway.app/api/guides');
+        const response = await fetch('https://api.alth-publiccommunity.xyz/api/guides');
         const data = await response.json();
         setGuides(data);
       } catch (error) {

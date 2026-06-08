@@ -15,7 +15,7 @@ const HeroSlider = () => {
   useEffect(() => {
     const fetchDiscordImages = async () => {
       try {
-        const response = await fetch('https://althpc-production.up.railway.app/api/slides');
+        const response = await fetch('https://api.alth-publiccommunity.xyz/api/slides');
         if (!response.ok) throw new Error("API not responding");
         let data = await response.json();
         
