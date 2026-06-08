@@ -79,6 +79,55 @@ client.on(Events.MessageCreate, async message => {
 
     await message.reply({ embeds: [embed], components: [new ActionRowBuilder().addComponents(select)] });
   }
+
+  // --- New !announce command ---
+  if (message.content === '!announce') {
+    const ANNOUNCE_CHANNEL_ID = '543628464104931338';
+    const channel = await client.channels.fetch(ANNOUNCE_CHANNEL_ID).catch(() => null);
+
+    if (!channel) {
+      return message.reply('❌ ไม่พบช่องสำหรับประกาศ กรุณาตรวจสอบ ID หรือสิทธิ์ของบอท');
+    }
+
+    const announceEmbed = new EmbedBuilder()
+      .setColor('#FF4E1D')
+      .setTitle('🌐 ALTH PUBLIC COMMUNITY - เว็บไซต์ใหม่เปิดให้บริการแล้ว!')
+      .setDescription('ศูนย์รวมข้อมูล ข่าวสาร และกิจกรรมของ Apex Legends ที่ใหญ่ที่สุดในไทย\n\n🔹 **News & Updates:** ติดตามข่าวสารใหม่ล่าสุด\n🔹 **Community Highlights:** รับชมคลิปเด่นจากทางบ้าน\n🔹 **Tournament Calendar:** ตารางแข่งขันอีสปอร์ต\n🔹 **Partners:** พื้นที่สำหรับพาร์ทเนอร์และสตรีมเมอร์')
+      .setImage('https://alth-publiccommunity.xyz/รูป/ALTH_BANNER_BOT.png') // ใช้แบนเนอร์ที่มีในโปรเจกต์
+      .setURL('https://alth-publiccommunity.xyz/')
+      .setFooter({ text: 'THAILAND PUBLIC COMMUNITY', iconURL: client.user.displayAvatarURL() })
+      .setTimestamp();
+
+    const row = new ActionRowBuilder().addComponents(
+      new StringSelectMenuBuilder()
+        .setCustomId('visit_website')
+        .setPlaceholder('🔗 คลิกเพื่อไปที่เว็บไซต์...')
+        .addOptions([
+          { label: 'เข้าสู่เว็บไซต์', value: 'visit', description: 'alth-publiccommunity.xyz' }
+        ])
+    );
+
+    // หรือใช้ Button แทน Select Menu เพื่อให้กดง่ายขึ้น
+    const { ButtonBuilder, ButtonStyle } = await import('discord.js');
+    const buttonRow = new ActionRowBuilder().addComponents(
+      new ButtonBuilder()
+        .setLabel('🌐 เข้าสู่เว็บไซต์')
+        .setURL('https://alth-publiccommunity.xyz/')
+        .setStyle(ButtonStyle.Link),
+      new ButtonBuilder()
+        .setLabel('📢 แจ้งปัญหา/ติดต่อ')
+        .setURL('https://discord.gg/apex-legends-thailand')
+        .setStyle(ButtonStyle.Link)
+    );
+
+    try {
+      await channel.send({ embeds: [announceEmbed], components: [buttonRow] });
+      await message.reply(`✅ ประกาศเรียบร้อยแล้วที่ช่อง <#${ANNOUNCE_CHANNEL_ID}>`);
+    } catch (error) {
+      console.error(error);
+      await message.reply('❌ เกิดข้อผิดพลาดในการส่งประกาศ');
+    }
+  }
 });
 
 // --- Interaction Handler ---
