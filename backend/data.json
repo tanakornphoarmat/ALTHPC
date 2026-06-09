@@ -1,0 +1,59 @@
+{
+  "slides": [
+    {
+      "url": "https://cdn.discordapp.com/attachments/877871974020415558/1512519484475179228/apex-hero-medium-about-legends.png?ex=6a24630a&is=6a23118a&hm=aacf7e117821ceb964bea6f235e26c38ce9c97736188fa96332aced36db9a0da&",
+      "title": "SLIDER 1"
+    },
+    {
+      "url": "https://cdn.discordapp.com/attachments/877871974020415558/1512519657704259626/apex-hero-medium-about-modes.png?ex=6a246333&is=6a2311b3&hm=1fdf5c5ec97f1a56584834aeb406c33a3c11e0ea952673def05fc08bed708647&",
+      "title": "SLIDER 2"
+    },
+    {
+      "url": "https://cdn.discordapp.com/attachments/877871974020415558/1512519749416779806/apex-media-maps-e-district-xl.png?ex=6a246349&is=6a2311c9&hm=6dc54ff15c2c3b83d7130e08e42f5fe191ce868ebfdb3bb58950aaf08c74e30e&",
+      "title": "SLIDER 3"
+    }
+  ],
+  "news": [
+    {
+      "id": "1780736877956",
+      "title": "🎁 รับ Apex Packs สูงสุด 26 แพ็ก เพียงรับชม ALGS",
+      "content": "•  รับชมครบ 15 นาที = 1 Apex Pack\n•  Regional Finals: รับชมครบ 60 นาที = โบนัส 1 Apex Pack\n\n8 มิถุนายน 2026 — 2 Apex Packs\nเริ่ม : อีก 1 วัน\n\n8–12 กรกฎาคม 2026 — 5 Apex Packs\nเริ่ม: อีก 1 เดือน\nสิ้นสุด: อีก 1 เดือน\n\n22 สิงหาคม – 7 กันยายน 2026 — 9 Apex Packs\nเริ่ม: อีก 3 เดือน\nสิ้นสุด: อีก 3 เดือน\n\n13 กันยายน 2026 — 2 Apex Packs\nอีก 3 เดือน\n\n30 ตุลาคม – 2 พฤศจิกายน 2026 — 4 Apex Packs\nเริ่ม: อีก 5 เดือน\nสิ้นสุด: อีก 5 เดือน\n\n29–31 มกราคม 2027 — 4 Apex Packs\nเริ่ม: อีก 8 เดือน\nสิ้นสุด: อีก 8 เดือน\n\n#หมายเหตุข้อมูลทั้งหมดอาจจะผิดพลาดโปรดตรวจสอบด้วยตัวเอง",
+      "image": "https://media.discordapp.net/attachments/1351604146784178278/1512730966408302783/HKG0AK5W4AAV52V.png?ex=6a27caff&is=6a26797f&hm=bf1178a7865f9109ecb50d2af0b6f7b6b0e2a04ee29d462c87a23a9f45a5be82&=&format=webp&quality=lossless&width=1022&height=587",
+      "links": [
+        "https://x.com/HYPERMYSTx/status/2063139194097086904?s=20"
+      ],
+      "category": "GAME",
+      "date": "2026-06-06T09:07:57.956Z"
+    }
+  ],
+  "partners": [],
+  "tournaments": [],
+  "videos": [
+    {
+      "id": 1,
+      "url": "https://www.youtube.com/watch?v=vOIdqzOhUpo",
+      "title": "Highlight 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.youtube.com/watch?v=6_G08Q32Fpg",
+      "title": "Highlight 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.youtube.com/watch?v=qb00PDb7eqM",
+      "title": "Highlight 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.youtube.com/watch?v=DGnH8MfyTf0",
+      "title": "Highlight 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.youtube.com/watch?v=d542OZEy6Lk",
+      "title": "Highlight 5"
+    }
+  ],
+  "guides": []
+}

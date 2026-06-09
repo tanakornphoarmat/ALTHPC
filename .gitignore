@@ -11,6 +11,3 @@ dist/
 # OS files
 .DS_Store
 Thumbs.db
-
-# Database/Data
-backend/data.json
