@@ -5,7 +5,7 @@ const Navbar = ({ lang, setLang, t }) => {
     <nav className="fixed top-0 left-0 w-full z-50 bg-apex-dark/90 backdrop-blur-md border-b border-apex-red/30">
       <div className="flex items-center justify-between w-full px-2">
         <a href="/" className="flex items-center ml-4">
-          <img src="/รูป/logo.png" alt="ALTH Logo" className="h-20 w-auto" />
+          <img src="/รูป/logoalth.png" alt="ALTH Logo" className="h-20 w-auto" />
         </a>
         <div className="flex items-center gap-6 px-4">
           <div className="flex gap-6 text-sm font-bold tracking-widest text-white/80">
