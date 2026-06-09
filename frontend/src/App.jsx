@@ -305,7 +305,7 @@ function App() {
         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-apex-red/50 to-transparent"></div>
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
           <div className="flex flex-col items-center md:items-start gap-4">
-             <img src="/รูป/logo.png" alt="ALTH Logo" className="h-20 w-auto grayscale brightness-50" />
+             <img src="/รูป/logoalth.png" alt="ALTH Logo" className="h-20 w-auto grayscale brightness-50" />
              <p className="text-gray-600 max-w-sm text-center md:text-left text-sm normal-case font-sans">
                {lang === 'TH' ? 'คอมมูนิตี้ Apex Legends ที่ใหญ่ที่สุดในประเทศไทย แหล่งรวมข่าวสาร การแข่งขัน และมิตรภาพ' : 'The largest Apex Legends community in Thailand. A hub for news, competitions, and friendship.'}
              </p>
